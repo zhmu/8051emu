@@ -1,0 +1,263 @@
+8051 Opcode List				          PD, Rink Springer 2002
+--------------------------------------------------------------------------------
+
+Binary		      Hex	    Page Instruction
+--------------------------------------------------------------------------------
+00000000	    = 0x00	  = [185] NOP
+00000001	    = 0x01	  = [141] AJMP	addr11
+00000010	    = 0x02	  = [172] LJMP	addr16
+00000011	    = 0x03	  = [196] RR	A
+00000100	    = 0x04	  = [160] INC	A
+00000101	    = 0x05	  = [161] INC	direct
+00000110	    = 0x06	  = [161] INC	@R0
+00000111	    = 0x07	  = [161] INC	@R1
+00001000	    = 0x08	  = [160] INC	R0
+00001001	    = 0x09	  = [160] INC	R1
+00001010	    = 0x0A	  = [160] INC	R2
+00001011	    = 0x0B	  = [160] INC	R3
+00001100	    = 0x0C	  = [160] INC	R4
+00001101	    = 0x0D	  = [160] INC	R5
+00001110	    = 0x0E	  = [160] INC	R6
+00001111	    = 0x0F	  = [160] INC	R7
+00010000	    = 0x10	  = [164] JBC	bit, rel
+00010001	    = 0x11	  = [136] ACALL addr11
+00010010	    = 0x12	  = [171] LCALL	addr16
+00010011	    = 0x13	  = [197] RRC	A
+00010100	    = 0x14	  = [155] DEC	A
+00010101	    = 0x15	  = [156] DEC	direct
+00010110	    = 0x16	  = [156] DEC	@R0
+00010111	    = 0x17	  = [156] DEC	@R1
+00011000	    = 0x18	  = [155] DEC	R0
+00011001	    = 0x19	  = [155] DEC	R1
+00011010	    = 0x1A	  = [155] DEC	R2
+00011011	    = 0x1B	  = [155] DEC	R3
+00011100	    = 0x1C	  = [155] DEC	R4
+00011101	    = 0x1D	  = [155] DEC	R5
+00011110	    = 0x1E	  = [155] DEC	R6
+00011111	    = 0x1F	  = [155] DEC	R7
+00100000	    = 0x20	  = [163] JB	bit, rel
+00100001	    = 0x21	  = [141] AJMP	addr11
+00100010	    = 0x22	  = [192] RET
+00100011	    = 0x23	  = [194] RL	A
+00100100	    = 0x24	  = [138] ADD	A, #data
+00100101	    = 0x25	  = [137] ADD   A, direct
+00100110	    = 0x26	  = [138] ADD	A, @R0
+00100111	    = 0x27	  = [138] ADD	A, @R1
+00101000	    = 0x28	  = [137] ADD	A, R0
+00101001	    = 0x29	  = [137] ADD	A, R1
+00101010	    = 0x2A	  = [137] ADD	A, R2
+00101011	    = 0x2B	  = [137] ADD	A, R3
+00101100	    = 0x2C	  = [137] ADD	A, R4
+00101101	    = 0x2D	  = [137] ADD	A, R5
+00101110	    = 0x2E	  = [137] ADD	A, R6
+00101111	    = 0x2F	  = [137] ADD	A, R7
+00110000	    = 0x30	  = [167] JNB	bit, rel
+00110001	    = 0x31	  = [136] ACALL addr11
+00110010	    = 0x32	  = [193] RETI
+00110011	    = 0x33	  = [195] RLC	A
+00110100	    = 0x34	  = [140] ADDC	A, #data
+00110101	    = 0x35	  = [139] ADDC	A, direct
+00110110	    = 0x36	  = [140] ADDC	A, @R0
+00110111	    = 0x37	  = [140] ADDC	A, @R1
+00111000	    = 0x38	  = [139] ADC	A, R0
+00111001	    = 0x39	  = [139] ADC	A, R1
+00111010	    = 0x3A	  = [139] ADC	A, R2
+00111011	    = 0x3B	  = [139] ADC	A, R3
+00111100	    = 0x3C	  = [139] ADC	A, R4
+00111101	    = 0x3D	  = [139] ADC	A, R5
+00111110	    = 0x3E	  = [139] ADC	A, R6
+00111111	    = 0x3F	  = [139] ADC	A, R7
+01000000	    = 0x40	  = [165] JC	rel
+01000001	    = 0x41	  = [141] AJMP	addr11
+01000010	    = 0x42	  = [187] ORL	direct, A
+01000011	    = 0x43	  = [188] ORL	direct, #data
+01000100	    = 0x44	  = [187] ORL	A, #data
+01000101	    = 0x45	  = [187] ORL	A, direct
+01000110	    = 0x46	  = [187] ORL	A, @R0
+01000111	    = 0x47	  = [187] ORL	A, @R1
+01001000	    = 0x48	  = [186] ORL	A, R0
+01001001	    = 0x49	  = [186] ORL	A, R1
+01001010	    = 0x4A	  = [186] ORL	A, R2
+01001011	    = 0x4B	  = [186] ORL	A, R3
+01001100	    = 0x4C	  = [186] ORL	A, R4
+01001101	    = 0x4D	  = [186] ORL	A, R5
+01001110	    = 0x4E	  = [186] ORL	A, R6
+01001111	    = 0x4F	  = [186] ORL	A, R7
+01010000	    = 0x50	  = [168] JNC	rel
+01010001	    = 0x51	  = [136] ACALL addr11
+01010010	    = 0x52	  = [???] ANL	direct, A
+01010011	    = 0x53	  = [144] ANL	direct, #data
+01010100	    = 0x54	  = [143] ANL	A, #data
+01010101	    = 0x55	  = [143] ANL	A, direct
+01010110	    = 0x56	  = [143] ANL	A, @R0
+01010111	    = 0x57	  = [143] ANL	A, @R1
+01011000	    = 0x58	  = [142] ANL	A, R0
+01011001	    = 0x59	  = [142] ANL	A, R1
+01011010	    = 0x5A	  = [142] ANL	A, R2
+01011011	    = 0x5B	  = [142] ANL	A, R3
+01011100	    = 0x5C	  = [142] ANL	A, R4
+01011101	    = 0x5D	  = [142] ANL	A, R5
+01011110	    = 0x5E	  = [142] ANL	A, R6
+01011111	    = 0x5F	  = [142] ANL	A, R7
+01100000	    = 0x60	  = [170] JZ	rel
+01100001	    = 0x61	  = [141] AJMP	addr11
+01100010	    = 0x62	  = [207] XRL	direct, A
+01100011	    = 0x63	  = [208] XRL	direct, #data
+01100100	    = 0x64	  = [207] XRL	A, #data
+01100101	    = 0x65	  = [207] XRL	A, direct
+01100110	    = 0x66	  = [207] XRL	A, @R0
+01100111	    = 0x67	  = [207] XRL	A, @R1
+01101000	    = 0x68	  = [206] XRL	A, R0
+01101001	    = 0x69	  = [206] XRL	A, R1
+01101010	    = 0x6A	  = [206] XRL	A, R2
+01101011	    = 0x6B	  = [206] XRL	A, R3
+01101100	    = 0x6C	  = [206] XRL	A, R4
+01101101	    = 0x6D	  = [206] XRL	A, R5
+01101110	    = 0x6E	  = [206] XRL	A, R6
+01101111	    = 0x6F	  = [206] XRL	A, R7
+01110000	    = 0x70	  = [169] JNZ	rel
+01110001	    = 0x71	  = [136] ACALL addr11
+01110010	    = 0x72	  = [189] ORL	C, bit
+01110011	    = 0x73	  = [166] JMP	@A + DPTR
+01110100	    = 0x74	  = [174] MOV	A, #data
+01110101	    = 0x75	  = [176] MOV	direct, #data
+01110110	    = 0x76	  = [177] MOV	@R0, #data
+01110111	    = 0x77	  = [177] MOV	@R1, #data
+01111000	    = 0x78	  = [175] MOV	R0, #data
+01111001	    = 0x79	  = [175] MOV	R1, #data
+01111010	    = 0x7A	  = [175] MOV	R2, #data
+01111011	    = 0x7B	  = [175] MOV	R3, #data
+01111100	    = 0x7C	  = [175] MOV	R4, #data
+01111101	    = 0x7D	  = [175] MOV	R5, #data
+01111110	    = 0x7E	  = [175] MOV	R6, #data
+01111111	    = 0x7F	  = [175] MOV	R7, #data
+10000000	    = 0x80	  = [199] SJMP	rel
+10000001	    = 0x81	  = [141] AJMP	addr11
+10000010	    = 0x82	  = [145] ANL	C, bit
+10000011	    = 0x83	  = [181] MOVC	A, @A + PC
+10000100	    = 0x84	  = [157] DIV	AB
+10000101	    = 0x85	  = [175] MOV	direct, direct
+10000110	    = 0x86	  = [176] MOV	direct, @R0
+10000111	    = 0x87	  = [176] MOV	direct, @R1
+10001000	    = 0x88	  = [175] MOV	direct,	R0
+10001001	    = 0x89	  = [175] MOV	direct,	R1
+10001010	    = 0x8A	  = [175] MOV	direct,	R2
+10001011	    = 0x8B	  = [175] MOV	direct,	R3
+10001100	    = 0x8C	  = [175] MOV	direct,	R4
+10001101	    = 0x8D	  = [175] MOV	direct,	R5
+10001110	    = 0x8E	  = [175] MOV	direct,	R6
+10001111	    = 0x8F	  = [175] MOV	direct,	R7
+10010000	    = 0x90	  = [179] MOV	DPTR, #data16
+10010001	    = 0x91	  = [136] ACALL addr11
+10010010	    = 0x92	  = [178] MOV	bit, C
+10010011	    = 0x93	  = [180] MOVC	A, @A + DPTR
+10010100	    = 0x94	  = [201] SUBB	A, #data
+10010101	    = 0x95	  = [201] SUBB	A, direct
+10010110	    = 0x96	  = [201] SUBB	A, @R0
+10010111	    = 0x97	  = [201] SUBB	A, @R1
+10011000	    = 0x98	  = [200] SUBB	A, R0
+10011001	    = 0x99	  = [200] SUBB	A, R1
+10011010	    = 0x9A	  = [200] SUBB	A, R2
+10011011	    = 0x9B	  = [200] SUBB	A, R3
+10011100	    = 0x9C	  = [200] SUBB	A, R4
+10011101	    = 0x9D	  = [200] SUBB	A, R5
+10011110	    = 0x9E	  = [200] SUBB	A, R6
+10011111	    = 0x9F	  = [200] SUBB	A, R7
+10100000	    = 0xA0	  = [189] ORL	C, /bit
+10100001	    = 0xA1	  = [141] AJMP	addr11
+10100010	    = 0xA2	  = [178] MOV	C, bit
+10100011	    = 0xA3	  = [162] INC	DPTR
+10100100	    = 0xA4	  = [184] MUL	AB
+10100101	    = 0xA5	  = [???] ???
+10100110	    = 0xA6	  = [176] MOV	@R0, direct
+10100111	    = 0xA7	  = [176] MOV	@R1, direct
+10101000	    = 0xA8	  = [174] MOV	R0, direct
+10101001	    = 0xA9	  = [174] MOV	R1, direct
+10101010	    = 0xAA	  = [174] MOV	R2, direct
+10101011	    = 0xAB	  = [174] MOV	R3, direct
+10101100	    = 0xAC	  = [174] MOV	R4, direct
+10101101	    = 0xAD	  = [174] MOV	R5, direct
+10101110	    = 0xAE	  = [174] MOV	R6, direct
+10101111	    = 0xAF	  = [174] MOV	R7, direct
+10110000	    = 0xB0	  = [145] ANL	C, /bit
+10110001	    = 0xB1	  = [136] ACALL addr11
+10110010	    = 0xB2	  = [152] CPL	bit
+10110011	    = 0xB3	  = [152] CPL	C
+10110100	    = 0xB4	  = [147] CJNE	A, #data, rel
+10110101	    = 0xB5	  = [147] CJNE	A, direct, rel
+10110110	    = 0xB6	  = [148] CJNE	@R0, #data, rel
+10110111	    = 0xB7	  = [148] CJNE	@R1, #data, rel
+10111000	    = 0xB8	  = [147] CJNE	R0, #data, rel
+10111001	    = 0xB9	  = [147] CJNE	R1, #data, rel
+10111010	    = 0xBA	  = [147] CJNE	R2, #data, rel
+10111011	    = 0xBB	  = [147] CJNE	R3, #data, rel
+10111100	    = 0xBC	  = [147] CJNE	R4, #data, rel
+10111101	    = 0xBD	  = [147] CJNE	R5, #data, rel
+10111110	    = 0xBE	  = [147] CJNE	R6, #data, rel
+10111111	    = 0xBF	  = [147] CJNE	R7, #data, rel
+11000000	    = 0xC0	  = [191] PUSH	direct
+11000001	    = 0xC1	  = [141] AJMP	addr11
+11000010	    = 0xC2	  = [150] CLR	bit
+11000011	    = 0xC3	  = [150] CLR	C
+11000100	    = 0xC4	  = [202] SWAP	A
+11000101	    = 0xC5	  = [203] XCH	A, direct
+11000110	    = 0xC6	  = [204] XCH	A, @R0
+11000111	    = 0xC7	  = [204] XCH	A, @R1
+11001000	    = 0xC8	  = [203] XCH	A, R0
+11001001	    = 0xC9	  = [203] XCH	A, R1
+11001010	    = 0xCA	  = [203] XCH	A, R2
+11001011	    = 0xCB	  = [203] XCH	A, R3
+11001100	    = 0xCC	  = [203] XCH	A, R4
+11001101	    = 0xCD	  = [203] XCH	A, R5
+11001110	    = 0xCE	  = [203] XCH	A, R6
+11001111	    = 0xCF	  = [203] XCH	A, R7
+11010000	    = 0xD0	  = [190] POP	direct
+11010001	    = 0xD1	  = [136] ACALL addr11
+11010010	    = 0xD2	  = [???] SETB  bit
+11010011	    = 0xD3	  = [198] SETB	C
+11010100	    = 0xD4	  = [154] DA
+11010101	    = 0xD5	  = [159] DJNZ	direct, rel
+11010110	    = 0xD6	  = [205] XCHD	A, @R0
+11010111	    = 0xD7	  = [205] XCHD	A, @R1
+11011000	    = 0xD8	  = [159] DJNZ	R0, rel
+11011001	    = 0xD9	  = [159] DJNZ	R1, rel
+11011010	    = 0xDA	  = [159] DJNZ	R2, rel
+11011011	    = 0xDB	  = [159] DJNZ	R3, rel
+11011100	    = 0xDC	  = [159] DJNZ	R4, rel
+11011101	    = 0xDD	  = [159] DJNZ	R5, rel
+11011110	    = 0xDE	  = [159] DJNZ	R6, rel
+11011111	    = 0xDF	  = [159] DJNZ	R7, rel
+11100000	    = 0xE0	  = [183] MOVX	A, @DPTR
+11100001	    = 0xE1	  = [141] AJMP	addr11
+11100010	    = 0xE2	  = [183] MOVX	A, @R0
+11100011	    = 0xE3	  = [183] MOVX	A, @R1
+11100100	    = 0xE4	  = [149] CLR	A
+11100101	    = 0xE5	  = [173] MOV	A, direct
+11100110	    = 0xE6	  = [174] MOV	A, @R0
+11100111	    = 0xE7	  = [174] MOV	A, @R1
+11101000	    = 0xE8	  = [173] MOV	A, R0
+11101001	    = 0xE9	  = [173] MOV	A, R1
+11101010	    = 0xEA	  = [173] MOV	A, R2
+11101011	    = 0xEB	  = [173] MOV	A, R3
+11101100	    = 0xEC	  = [173] MOV	A, R4
+11101101	    = 0xED	  = [173] MOV	A, R5
+11101110	    = 0xEE	  = [173] MOV	A, R6
+11101111	    = 0xEF	  = [173] MOV	A, R7
+11110000	    = 0xF0	  = [183] MOVX	@DPTR, A
+11110001	    = 0xF1	  = [136] ACALL addr11
+11110010	    = 0xF2	  = [183] MOVX	@R0, A
+11110011	    = 0xF3	  = [183] MOVX	@R1, A
+11110100	    = 0xF4	  = [151] CPL	A
+11110101	    = 0xF5	  = [175] MOV	direct, A
+11110110	    = 0xF6	  = [176] MOV	@R0, A
+11110111	    = 0xF7	  = [176] MOV	@R1, A
+11111000	    = 0xF8	  = [174] MOV	R0, A
+11111001	    = 0xF9	  = [174] MOV	R1, A
+11111010	    = 0xFA	  = [174] MOV	R2, A
+11111011	    = 0xFB	  = [174] MOV	R3, A
+11111100	    = 0xFC	  = [174] MOV	R4, A
+11111101	    = 0xFD	  = [174] MOV	R5, A
+11111110	    = 0xFE	  = [174] MOV	R6, A
+11111111	    = 0xFF	  = [174] MOV	R7, A
+
+Page numbers refer to M80515.PDF, as found on the Infineon website.
